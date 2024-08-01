@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="darkBlue">#141A2E</color>
+    <color name="background_bottom_nav_bar">@color/darkBlue</color>
+    <color name="element_text_color">@color/white</color>
+    <color name="colorButton">@color/yellow</color>
+</resources>
