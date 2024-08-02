@@ -7,6 +7,7 @@
     <!-- 1- Custom Background Shape
          2- CardView -> Corner Radius  and background
      -->
+    <color name="gold_with_75_opacity">#C8B396</color>
     <color name="gold">#B7935F</color>
     <color name="gold_variant">#816A48</color>
     <color name="blue_dark">#141A2E</color>

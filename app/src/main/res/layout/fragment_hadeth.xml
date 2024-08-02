@@ -20,8 +20,8 @@
     <View
         android:id="@+id/quran_horizontal_line1"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gold"
+        android:layout_height="2dp"
+        style="@style/line_bg"
         app:layout_constraintTop_toBottomOf="@id/hadeth_image" />
 
     <TextView
@@ -38,8 +38,8 @@
     <View
         android:id="@+id/quran_horizontal_line2"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gold"
+        android:layout_height="2dp"
+        style="@style/line_bg"
         app:layout_constraintTop_toBottomOf="@id/hadeth_title_text" />
 
     <androidx.recyclerview.widget.RecyclerView
