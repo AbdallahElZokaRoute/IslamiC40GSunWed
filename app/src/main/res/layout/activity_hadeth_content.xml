@@ -34,7 +34,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hadeth_content_recycler_view"
-        style="@style/Isalmic_Content_BG"
+        style="@style/Islamic_Content_BG"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
