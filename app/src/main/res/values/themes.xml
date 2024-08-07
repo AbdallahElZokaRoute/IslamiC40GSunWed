@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.IslamiC40GSunWed" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!--        <item name="colorPrimary">@color/my_light_primary</item>-->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.IslamiC40GSunWed" parent="Base.Theme.IslamiC40GSunWed">
@@ -22,7 +22,7 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="Isalmic_Content_BG">
+    <style name="Islamic_Content_BG">
         <item name="android:background">@drawable/verses_bg</item>
     </style>
 
@@ -32,6 +32,18 @@
 
     <style name="Islamic_BG">
         <item name="android:background">@drawable/islamic_bg</item>
+    </style>
+    
+    <style name="tasbeeh_image">
+        <item name="android:tint">@color/gold</item>
+    </style>
+    
+    <style name="cv_counter">
+        <item name="cardBackgroundColor">@color/gold_with_57_opacity</item>
+    </style>
 
+    <style name="cv_tasbeeh_text">
+        <item name="android:background">@color/gold</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

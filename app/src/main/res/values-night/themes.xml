@@ -23,7 +23,7 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="Isalmic_Content_BG">
+    <style name="Islamic_Content_BG">
         <item name="android:background">@drawable/verses_dark_bg</item>
     </style>
 
@@ -31,8 +31,20 @@
         <item name="tint">@color/white</item>
     </style>
 
-
     <style name="Islamic_BG">
         <item name="android:background">@drawable/islamic_bg_dark</item>
+    </style>
+
+    <style name="tasbeeh_image">
+        <item name="android:tint">@color/yellow</item>
+    </style>
+
+    <style name="cv_counter">
+        <item name="cardBackgroundColor">@color/blue_dark_with_80_opacity</item>
+    </style>
+
+    <style name="cv_tasbeeh_text">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 </resources>
