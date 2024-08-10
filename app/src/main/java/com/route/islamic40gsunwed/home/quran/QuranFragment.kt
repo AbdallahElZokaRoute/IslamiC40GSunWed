@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.route.islamic40gsunwed.Constants
@@ -14,6 +15,7 @@ class QuranFragment:Fragment() {
     lateinit var chapterAdapter: ChapterNamesAdapter
     lateinit var chapterRv: RecyclerView
     lateinit var chapterList: ArrayList<Chapter>
+    lateinit var switchButton: Button
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -25,6 +27,7 @@ class QuranFragment:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         chapterRv = view.findViewById(R.id.chapters_rv)
+        switchButton = view.findViewById(R.id.swith_button)
         initData()
         chapterAdapter = ChapterNamesAdapter(chapterList)
         chapterAdapter.chapterOnClick = object: SetOnChapterClickListner{
@@ -37,8 +40,11 @@ class QuranFragment:Fragment() {
 
         }
         chapterRv.adapter = chapterAdapter
+        switchButton.setOnClickListener{
+        }
 
     }
+
     fun initData(){
         chapterList = arrayListOf()
         Constants.ArSuras.forEachIndexed{ index, item ->
