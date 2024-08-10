@@ -9,41 +9,34 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.route.islamic40gsunwed.R
+import com.route.islamic40gsunwed.databinding.FragmentTsbehBinding
 import com.route.islamic40gsunwed.home.tsbeeh.Tsbeh
 
 class TsbehFragment: Fragment() {
-    lateinit var clickedButton: Button
-    lateinit var numberOfTsbeeh: TextView
-    lateinit var image: ImageView
-    lateinit var headImage: ImageView
+    lateinit var binding: FragmentTsbehBinding
     var tsbeh: Tsbeh = Tsbeh()
      override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_tsbeh, container, false)
+         binding = FragmentTsbehBinding.inflate(inflater,container,false)
+         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initParamters(view)
-        clickedButton.setOnClickListener {
+        binding.buttonClick.setOnClickListener {
             imageRotation()
             tsbeh.incrementTsbeeh()
-            numberOfTsbeeh.text = tsbeh.counter.toString()
-            clickedButton.text =  tsbeh.getCurrentTsbeh()
+            binding.evNumberTsbeh.text = tsbeh.counter.toString()
+            binding.buttonClick.text =  tsbeh.getCurrentTsbeh()
 
         }
     }
-    fun initParamters(view: View){
-        clickedButton = view.findViewById(R.id.button_click)
-        numberOfTsbeeh = view.findViewById(R.id.ev_number_tsbeh)
-        image = view.findViewById(R.id.sebha)
-        headImage = view.findViewById(R.id.sebha_head)
-    }
+
     fun imageRotation(){
-        image.rotation += 11
+        binding.sebha.rotation += 360/33
 
     }
 
