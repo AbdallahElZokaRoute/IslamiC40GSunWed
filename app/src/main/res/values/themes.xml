@@ -1,9 +1,67 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.IslamiC40GSunWed" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.Islami" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/camel</item>
+        <item name="colorPrimaryVariant">#A67735</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/off_black</item>
+        <item name="colorSecondaryVariant">@color/off_black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->-->
     </style>
-
-    <style name="Theme.IslamiC40GSunWed" parent="Base.Theme.IslamiC40GSunWed" />
+    <style name="appBarTextStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="font">@font/main_bold</item>
+        <item name= "android:padding">4dp</item>
+    </style>
+    <style name="buttonNavigationStyle">
+        <item name="android:background">@color/camel</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemIconSize">32dp</item>
+    </style>
+    <style name="islamicBg">
+        <item name="android:background">@drawable/main_bg</item>
+    </style>
+    <style name="viewBackground">
+        <item name="android:background">@color/camel</item>
+    </style>
+    <style name="textStyle">
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:padding">12dp</item>
+        <item name="font">@font/main_bold</item>
+    </style>
+    <style name="backButton">
+        <item name="android:src">@drawable/ic_back</item>
+    </style>
+    <style name="versesCardView">
+        <item name="android:backgroundTint">@color/white_color_80_obesity</item>
+    </style>
+    <style name="editViewTsbeh">
+        <item name="android:background">@drawable/rectangle_mit_radius_25</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:padding">12dp</item>
+        <item name="font">@font/main_bold</item>
+    </style>
+    <style name="buttonTsbeh">
+        <item name="android:background">@drawable/rectangle_mit_radius_25_button</item>
+        <item name="android:textColor">@color/off_black</item>
+        <item name="android:padding">12dp</item>
+        <item name="font">@font/main_bold</item>
+    </style>
+    <style name="sebha_image">
+        <item name="android:src">@drawable/sebha_image</item>
+    </style>
+    <style name="head_sebha">
+        <item name="android:src">@drawable/head_seb7a</item>
+    </style>
+    <style name="splash_view">
+        <item name="android:background">@drawable/splash</item>
+    </style>
 </resources>
