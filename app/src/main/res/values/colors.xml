@@ -12,4 +12,8 @@
     <color name="blue_dark">#141A2E</color>
     <color name="blue_dark_with_80_opacity">#CC141A2E</color>
     <color name="yellow">#FACC1D</color>
+    <color name="counter_box_color">#B3B7935F</color>
+    <color name="counter_text_color">@color/black</color>
+    <color name="tasbeeh_btn_text">@color/white</color>
+    <color name="tasbeeh_btn_bg">@color/gold</color>
 </resources>
