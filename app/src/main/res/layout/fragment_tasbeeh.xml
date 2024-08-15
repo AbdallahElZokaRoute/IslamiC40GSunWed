@@ -60,17 +60,21 @@
         android:layout_marginTop="10dp"
         android:textSize="28sp"
         android:background="@drawable/counter_background" />
-    <Button
+
+    <TextView
+        android:id="@+id/zkr_tv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tasbeeh_counter_tv"
-        android:text="سبحان الله"
+        android:background="@drawable/zkr_background"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:textColor="@color/tasbeeh_btn_text"
         app:layout_constraintHeight_percent=".065"
         app:layout_constraintWidth_percent=".27"
+        tools:text="سبحان الله"
         />
 
 
