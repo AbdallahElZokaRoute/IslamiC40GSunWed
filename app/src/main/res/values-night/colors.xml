@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="counter_box_color">#B3141A2E</color>
+    <color name="counter_text_color">@color/white</color>
+    <color name="tasbeeh_btn_text">@color/black</color>
+    <color name="tasbeeh_btn_bg">@color/blue_dark</color>
+</resources>

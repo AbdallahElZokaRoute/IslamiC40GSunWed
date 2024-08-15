@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@drawable/islamic_bg">
+    <ImageView
+        android:id="@+id/seebha_head"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent=".1"
+        android:src="@drawable/head_sebha_logo"/>
+    <ImageView
+        android:id="@+id/seebha_body"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintTop_toBottomOf="@id/seebha_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent=".3"
+        android:src="@drawable/body_seebha"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".15"
+        android:orientation="horizontal"
+        />
+    <TextView
+        android:id="@+id/tasbeeh_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seebha_body"
+        android:gravity="center"
+        android:text="@string/tasbbehat_number"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tasbeeh_counter_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasbeeh_tv"
+        android:gravity="center"
+        tools:text="1"
+        app:layout_constraintWidth_percent=".16"
+        app:layout_constraintHeight_percent=".11"
+        android:textColor="@color/counter_text_color"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:background="@drawable/counter_background" />
+
+    <TextView
+        android:id="@+id/zkr_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tasbeeh_counter_tv"
+        android:background="@drawable/zkr_background"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/tasbeeh_btn_text"
+        app:layout_constraintHeight_percent=".065"
+        app:layout_constraintWidth_percent=".27"
+        tools:text="سبحان الله"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اسلامي</string>
+    <string name="quran">قران</string>
+    <string name="hadeeth">حديث</string>
+    <string name="tasbeeh">تسبيح</string>
+    <string name="radio">راديو</string>
+    <string name="islami">اسلامي</string>
+    <string name="chapter_name">رقم السورة</string>
+    <string name="chapter_position">موقع السورة</string>
+    <string name="quotes">احاديث</string>
+    <string name="tasbbehat_number">عدد التسبيحات</string>
+    <array name="azkarList">
+        <item>سبحان الله</item>
+        <item>الحمد الله</item>
+        <item>الله اكبر</item>
+        <item>لا اله الا الله</item>
+
+    </array>
+</resources>
