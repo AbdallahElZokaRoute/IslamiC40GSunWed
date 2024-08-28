@@ -1,16 +1,13 @@
 package com.route.islamic40gsunwed
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.route.islamic40gsunwed.fragments.HadeethFragment
 import com.route.islamic40gsunwed.fragments.QuranFragment
 import com.route.islamic40gsunwed.fragments.RadioFragment
-import com.route.islamic40gsunwed.fragments.TasbeehFragment
+import com.route.islamic40gsunwed.fragments.TasbehFragment
 
 class MainActivity : AppCompatActivity() {
     lateinit var bottomNavigationView: BottomNavigationView
@@ -22,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val fragment = when (it.itemId) {
                 R.id.navigation_quran -> QuranFragment()
                 R.id.navigation_hadeeth -> HadeethFragment()
-                R.id.navigation_tasbeeh -> TasbeehFragment()
+                R.id.navigation_tasbeeh -> TasbehFragment()
                 R.id.navigation_radio -> RadioFragment()
                 else -> QuranFragment()
             }
