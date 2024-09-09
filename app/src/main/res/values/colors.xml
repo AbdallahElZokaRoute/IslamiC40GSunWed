@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_with_80_opacity">#CCFFFFFF</color>
+
+    <!-- 1- Custom Background Shape
+         2- CardView -> Corner Radius  and background
+     -->
+    <color name="gold">#B7935F</color>
+    <color name="gold_variant">#816A48</color>
+    <color name="blue_dark">#141A2E</color>
+    <color name="blue_dark_with_80_opacity">#CC141A2E</color>
+    <color name="yellow">#FACC1D</color>
+    
+    <color name="counter_box_color">#c9b496</color>
+    <color name="tasbeh_box_color">@color/gold</color>
 </resources>

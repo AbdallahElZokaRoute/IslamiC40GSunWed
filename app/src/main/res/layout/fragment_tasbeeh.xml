@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/islamic_bg">
+
+
+    <ImageView
+        android:id="@+id/head_of_sebha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/head_of_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidline"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <ImageView
+        android:id="@+id/body_of_sebha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/body_of_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_of_sebha"
+        app:layout_constraintWidth_percent="0.60"
+
+        />
+
+    <TextView
+
+        android:id="@+id/number_of_tasbehat_txt_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:text="@string/tabehat"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/body_of_sebha"
+
+        />
+
+
+    <TextView
+        android:id="@+id/counter_of_tasbehat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/counter_box_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_of_tasbehat_txt_view"
+        tools:text="30"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tasbehat_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/tasbeh_box_color"
+        android:padding="18dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/counter_of_tasbehat"
+        tools:text="سبحان الله" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
