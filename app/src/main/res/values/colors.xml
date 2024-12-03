@@ -12,4 +12,12 @@
     <color name="blue_dark">#141A2E</color>
     <color name="blue_dark_with_80_opacity">#CC141A2E</color>
     <color name="yellow">#FACC1D</color>
+
+    <color name="element_text_color">@color/black</color>
+    <color name="darkBlue">#141A2E</color>
+    <color name="lightBrown">#B7935F</color>
+
+    <color name="background_bottom_nav_bar">@color/lightBrown</color>
+
+    <color name="colorButton">@color/lightBrown</color>
 </resources>

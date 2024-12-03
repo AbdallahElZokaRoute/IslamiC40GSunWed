@@ -6,6 +6,15 @@ class Constants {
         val CHAPTER_POSITION_EXTRA = "chapter_pos"
         val HADETH_TITLE_EXTRA = "hadeth_title"
         val HADETH_DESC_EXTRA = "hadeth_desc"
+
+        var azkarList:List<String> = listOf(
+            "سبحان الله" ,
+            "الحمد لله" ,
+            "لا اله الا الله",
+            "الله اكبر"
+
+        )
+
         var chapters = listOf(
             "الفاتحه",
             "البقرة",
